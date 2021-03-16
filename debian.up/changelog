@@ -3,4 +3,4 @@ linux-hwe-5.8 (5.8.0-1.0~upboard0) focal; urgency=medium
   * Initial release
   * Based on Ubuntu version: linux-hwe-5.8: 5.8.0-45.51~20.04.1
   
-   -- AAEON <aaeon_cm@aaeon.com>  TFri, 12 Mar 2021 12:00:00 +0000
+ -- AAEON <aaeon_cm@aaeon.com>  Fri, 12 Mar 2021 12:00:00 +0000
