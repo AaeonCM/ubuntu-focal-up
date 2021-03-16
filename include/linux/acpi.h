@@ -1059,6 +1059,11 @@ void __acpi_handle_debug(struct _ddebug *descriptor, acpi_handle handle, const c
 bool acpi_gpio_get_irq_resource(struct acpi_resource *ares,
 				struct acpi_resource_gpio **agpio);
 int acpi_dev_gpio_irq_get(struct acpi_device *adev, int index);
+int acpi_node_add_pin_mapping(struct fwnode_handle *fwnode,
+			      const char *propname,
+			      const char *pinctl_name,
+			      unsigned int pin_offset,
+			      unsigned int npins);
 #else
 static inline bool acpi_gpio_get_irq_resource(struct acpi_resource *ares,
 					      struct acpi_resource_gpio **agpio)
@@ -1066,6 +1071,14 @@ static inline bool acpi_gpio_get_irq_resource(struct acpi_resource *ares,
 	return false;
 }
 static inline int acpi_dev_gpio_irq_get(struct acpi_device *adev, int index)
+{
+	return -ENXIO;
+}
+static inline int acpi_node_add_pin_mapping(struct fwnode_handle *fwnode,
+					    const char *propname,
+					    const char *pinctl_name,
+					    unsigned int pin_offset,
+					    unsigned int npins)
 {
 	return -ENXIO;
 }
