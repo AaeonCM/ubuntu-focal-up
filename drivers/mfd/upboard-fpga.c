@@ -357,6 +357,13 @@ static const struct dmi_system_id upboard_dmi_table[] __initconst = {
 			DMI_EXACT_MATCH(DMI_BOARD_VERSION, "V0.1"),
 		},
 	},
+	{
+		.matches = { /* UP Xtreme i11 */
+			DMI_EXACT_MATCH(DMI_SYS_VENDOR, "AAEON"),
+			DMI_EXACT_MATCH(DMI_BOARD_NAME, "UPX-TGL01"),
+			DMI_EXACT_MATCH(DMI_BOARD_VERSION, "V1.0"),
+		},
+	},
 	{ },
 };
 
