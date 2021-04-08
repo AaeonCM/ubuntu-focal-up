@@ -1,3 +1,9 @@
+linux-hwe-5.8 (5.8.0-1.0~upboard1) focal; urgency=medium
+
+  * f81534: Support RS422/RS485 mode switch
+
+ -- AAEON <aaeon_cm@aaeon.com>  Fri, 09 Apr 2021 12:00:00 +0000
+
 linux-hwe-5.8 (5.8.0-1.0~upboard0) focal; urgency=medium
 
   * Initial release
